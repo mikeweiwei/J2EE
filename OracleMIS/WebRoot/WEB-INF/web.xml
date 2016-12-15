@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>OracleMIS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <filter>
+  	<filter-name>Filter</filter-name>
+  	<filter-class>com.mydy.gyw.web.filter.Filter</filter-class>
+  </filter>
+  <filter-mapping>
+  		<filter-name>Filter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.mydy.gyw.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <servlet-class>com.mydy.gyw.web.servlet.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogsServlet</servlet-name>
+    <servlet-class>com.mydy.gyw.web.servlet.LogsServlet</servlet-class>
+  </servlet>
+  <servlet>
+	<servlet-name>EmpServlet</servlet-name>
+    <servlet-class>com.mydy.gyw.web.servlet.EmpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeptServlet</servlet-name>
+    <servlet-class>com.mydy.gyw.web.servlet.DeptServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/userServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <url-pattern>/loginOutServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogsServlet</servlet-name>
+    <url-pattern>/logsServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmpServlet</servlet-name>
+    <url-pattern>/empServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeptServlet</servlet-name>
+    <url-pattern>/deptServlet.action</url-pattern>
+  </servlet-mapping>
+   <listener>
+  	<display-name>OnlineListen</display-name>
+  	<listener-class>com.mydy.gyw.web.listener.OnlineListen</listener-class>
+  </listener>
+  <listener>
+  	<display-name>LogsListen</display-name>
+  	<listener-class>com.mydy.gyw.web.listener.LogsFiles</listener-class>
+  </listener>
+
+</web-app>

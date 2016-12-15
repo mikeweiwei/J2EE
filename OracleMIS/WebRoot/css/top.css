@@ -1,0 +1,19 @@
+a:link, a:visited {
+	text-decoration: underline;
+}
+
+.item a:link, .item a:visited {
+	text-decoration: none;
+	color: #ff00ff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.itemsel {
+	width: 60px;
+	height: 30px;
+	line-height: 20px;
+	font-size: 15pt;
+	font-weight:bold;
+	border: 3px dotted blue; 
+}

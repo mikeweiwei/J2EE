@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+body{
+	/*background: url(img/bjsxt.jpg);*/
+	background: #9AD075;
+}
+div{
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+	/*border: 1px solid blue;*/
+	line-height: 100px;
+	text-align: center;
+	font-size: 35pt;
+	font-family: "华文行楷";
+}

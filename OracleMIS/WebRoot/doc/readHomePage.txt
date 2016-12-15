@@ -1,0 +1,32 @@
+一、主页上的要点
+
+1. 窗口分割布局( frameset和frame );
+2. CSS样式装饰;
+3. JS行为控制; 
+
+4. 导入CSS\JS\图片与当前文件关联时要特别注意路径问题;
+
+5. 导航标签的应用
+	<!-- DL 表示一个菜单模块 -->
+	<dl class='bitem'>
+		<!-- DT控制模块标题-->
+		<dt  onClick='showHide("items1_1")'>用户管理模块</dt>
+		<!-- DD控制所有菜单选项-->
+		<dd  style='display:block' class='sitem' id='items1_1'>
+			<ul>
+				<li><a href="#">选项01</a></li>
+				<li>选项02</li>
+				<li>选项03</li>
+			</ul> 	
+		</dd>
+	</dl>
+	<dl class='bitem'>
+		<dt  onClick='showHide("items1_1")'>系统管理模块</dt>
+		<dd  style='display:block' class='sitem' id='items2_2'>
+			<ul>
+				<li>选项01</li>
+				<li>选项02</li>
+				<li>选项03</li>
+			</ul> 	
+		</dd>
+	</dl>

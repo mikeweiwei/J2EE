@@ -1,0 +1,116 @@
+body{
+	background: #9AD075; /*#FFFAF0;*/
+	align-content: center;
+}
+/*最外框*/
+#out{
+	border: 2px solid #1E90FF ;
+	border-radius:10px; /*圆角的半径值*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	height: 430px;
+	margin-top: inherit; /*inherit继承*/
+	box-shadow: 6px 6px 20px #778899;
+}
+
+div.int1{
+	border: 1px solid #1E90FF;
+	border-radius:10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 548px;
+	height: 55px;
+	font-size: 30pt;
+	font-family: "楷体";
+	line-height: 60px;
+	text-align: center;
+	background: #33AAFF; /*#B0E0E6;*/
+}
+
+div.int2{
+	margin-left:10px;
+	margin-top: 15px;
+	width: 530px;
+	height: 45px;
+	font-family: "楷体";
+	line-height: 45px;
+	/*border:solid 1px #B0E0E6;*/
+}
+
+div.int21{
+	float: left;
+	width: 120px;
+	height: 30px;
+	font-size: 15pt;
+	text-align: right;
+	line-height: 30px;
+	/*border:solid 1px #B0E0E6;*/
+}
+b.int22{
+	color: red;
+}
+div.int23{
+	float: left;
+	width: 200px;
+	height: 30px;
+}
+/*input*/
+input.int{
+	float: left;
+	width: 200px;
+	height: 30px;
+	font-family:"微软雅黑" ;
+	font-size: 20px;
+	background-color:#FFFFFF;
+	border: 2px solid #B0E0E6;
+}
+
+div.int24{
+	float: left;
+	margin-left: 8px;
+	padding: 5px;
+	width: 180px;
+	height: 22px;
+	font-size: 10pt;
+	line-height: 12px;
+	/*border:solid 1px #B0E0E6;*/
+}
+
+div.int25{
+	float: left;
+	margin-left: 8px;
+	padding: 5px;
+	width: 180px;
+	height: 22px;
+	font-size: 10pt;
+	line-height: 12px;
+	
+}
+input.int0{
+	margin-top: 20px;
+	margin-left: 125px;
+}
+
+div.int6{
+	margin-left: auto;
+	margin-right: auto;
+}
+input.int01{
+	margin-top: 30px;
+	margin-left: auto ;
+	margin-right: auto;
+	display:block;
+	background: #33AAFF; /*#32CD32;*/
+	font-size: 15pt;
+}
+#line01{
+	float: left;
+	text-align: left;
+	font-size: 15pt;
+}
+#line02{
+	float: right;
+	text-align: right;
+	font-size: 10pt;
+}
